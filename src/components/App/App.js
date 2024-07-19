@@ -4,7 +4,7 @@ import './App.css';
 import { useState } from 'react';
 import { texts } from '../../utils/texts';
 import { Route, Routes } from 'react-router-dom';
-import Hero from '../Hero/Hero';
+import Main from '../Main/Main';
 
 function App() {
   const [lang, setLang] = useState("ru");
@@ -17,7 +17,7 @@ function App() {
         />
         <Routes>
           <Route path='/' element={
-            <Hero
+            <Main
               texts={texts[lang].header}
             />
           }
