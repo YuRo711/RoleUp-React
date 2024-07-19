@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { texts } from '../../utils/texts';
 import { Route, Routes } from 'react-router-dom';
 import Main from '../Main/Main';
+import Footer from '../Footer/Footer';
 
 function App() {
   const [lang, setLang] = useState("ru");
@@ -24,6 +25,7 @@ function App() {
           />
         </Routes>
       </LanguageContext.Provider>
+      <Footer/>
     </div>
   );
 }
