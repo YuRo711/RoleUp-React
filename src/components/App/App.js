@@ -3,6 +3,8 @@ import { LanguageContext } from "../../contexts/LanguageContext";
 import './App.css';
 import { useState } from 'react';
 import { texts } from '../../utils/texts';
+import { Route, Routes } from 'react-router-dom';
+import Hero from '../Hero/Hero';
 
 function App() {
   const [lang, setLang] = useState("ru");
@@ -13,6 +15,14 @@ function App() {
         <Header
           texts={texts[lang].header}
         />
+        <Routes>
+          <Route path='/' element={
+            <Hero
+              texts={texts[lang].header}
+            />
+          }
+          />
+        </Routes>
       </LanguageContext.Provider>
     </div>
   );

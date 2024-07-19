@@ -16,3 +16,5 @@ button {
   font-family: 'Roboto', 'Lucida Sans', Verdana, sans-serif;
   cursor: pointer;
 }
+
+@import url("./vendor/fonts.css");
