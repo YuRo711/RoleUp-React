@@ -2,7 +2,7 @@ import Hero from "../Hero/Hero";
 import "./Main.css";
 
 export default function Main(props) {
-  const { texts } = props;
+  const { texts, images } = props;
 
   return (
     <main className="main">
@@ -19,6 +19,17 @@ export default function Main(props) {
             )
           }
         </div>
+      </section>
+      <section className="main__photos">
+        {
+          images.map((image) => 
+            <div className="main__image-container">
+              <img className="main__image"
+                src={image}
+              />
+            </div>
+          )
+        }
       </section>
     </main>
   )
