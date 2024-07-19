@@ -6,6 +6,9 @@ export default function Header(props) {
 
   return (
     <header className="header">
+      <div className="header__bar">
+        
+      </div>
       <div className="header__hero">
         <img className="header__banner"
           src={banner}
