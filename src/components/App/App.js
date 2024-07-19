@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={
             <Main
-              texts={texts[lang].header}
+              texts={texts[lang].main}
             />
           }
           />

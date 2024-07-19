@@ -1,0 +1,31 @@
+.main__info {
+  padding: 100px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__title {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.main__faq {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 80px;
+  max-width: 800px;
+}
+
+.main__question-title {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.main__answer {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+}
