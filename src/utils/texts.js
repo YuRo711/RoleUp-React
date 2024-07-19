@@ -14,7 +14,15 @@ export const texts = {
         },
         {
           url: "/games",
-          text: "Ролевые"
+          text: "Игры"
+        },
+        {
+          url: "/custom",
+          text: "Игра для вас"
+        },
+        {
+          url: "/contacts",
+          text: "Контакты"
         },
       ]
     }
