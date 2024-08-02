@@ -7,7 +7,7 @@ export default function Main(props) {
   return (
     <main className="main">
       <Hero texts={texts}/>
-      <section className="main__info">
+      <section className="main__section main_section_info">
         <h2 className="main__title">{texts.about}</h2>
         <div className="main__faq">
           {
@@ -30,6 +30,12 @@ export default function Main(props) {
             </div>
           )
         }
+      </section>
+      <section className="main__section">
+        <h2 className="main__title">{texts.games}</h2>
+        <div className="main__games">
+          
+        </div>
       </section>
     </main>
   )
