@@ -5,8 +5,10 @@ import { useState } from 'react';
 import { texts } from '../../utils/texts';
 import { images } from '../../utils/gallery';
 import { Route, Routes } from 'react-router-dom';
-import Main from '../Main/Main';
+import Main from '../Pages/Main/Main';
 import Footer from '../Footer/Footer';
+import Games from '../Pages/Games/Games';
+import { gameCards } from "../../utils/gameCards";
 
 function App() {
   const [lang, setLang] = useState("ru");
@@ -18,12 +20,17 @@ function App() {
           texts={texts[lang].header}
         />
         <Routes>
+          <Route path='/games' element={
+            <Games
+              texts={texts[lang].games}
+              cards={gameCards[lang]}
+            />}
+          />
           <Route path='/' element={
             <Main
               texts={texts[lang].main}
               images={images}
-            />
-          }
+            />}
           />
         </Routes>
       </LanguageContext.Provider>

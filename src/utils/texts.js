@@ -61,6 +61,11 @@ export const texts = {
       ],
       event: "Ближайшая игра",
       games: "Наши игры",
+    },
+
+    games: {
+      title: "Наши ролевые игры",
+      button: "Узнать больше"
     }
   }
 }

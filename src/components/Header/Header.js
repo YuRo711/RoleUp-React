@@ -15,8 +15,8 @@ export default function Header(props) {
       <h2 className="header__logo-title">RoleUp</h2>
       <nav className="header__links">
       {
-        texts.links.map((link) => 
-          <NavLink className="header__link" to={link.url}>
+        texts.links.map((link, i) => 
+          <NavLink className="header__link" to={link.url} key={`link-${i}`}>
             {link.text}
           </NavLink>
         )
