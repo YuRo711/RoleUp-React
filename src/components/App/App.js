@@ -9,6 +9,7 @@ import Main from '../Pages/Main/Main';
 import Footer from '../Footer/Footer';
 import Games from '../Pages/Games/Games';
 import { gameCards } from "../../utils/gameCards";
+import Events from '../Pages/Events/Events';
 
 function App() {
   const [lang, setLang] = useState("ru");
@@ -23,6 +24,12 @@ function App() {
           <Route path='/games' element={
             <Games
               texts={texts[lang].games}
+              cards={gameCards[lang]}
+            />}
+          />
+          <Route path='/events' element={
+            <Events
+              texts={texts[lang].events}
               cards={gameCards[lang]}
             />}
           />

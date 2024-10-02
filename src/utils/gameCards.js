@@ -34,7 +34,8 @@ export const gameCards = {
 
 export const nearestGames = [
   {
-    index: 2,
-    date: "29/08/24"
+    index: 3,
+    date: "10/10/24",
+    city: "Тель-Авив"
   },
 ]
