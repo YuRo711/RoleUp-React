@@ -31,10 +31,17 @@ export default function Main(props) {
           )
         }
       </section>
-      <section className="main__section">
-        <h2 className="main__title">{texts.games}</h2>
-        <div className="main__games">
-          
+      <section className="main__section main_section_info">
+        <h2 className="main__title">{texts.dnd}</h2>
+        <div className="main__faq">
+          {
+            texts.dndQuestions.map((q) => 
+              <div className="main__question">
+                <h3 className="main__question-title">{q.question}</h3>
+                <p className="main__answer">{q.answer}</p>
+              </div>
+            )
+          }
         </div>
       </section>
     </main>

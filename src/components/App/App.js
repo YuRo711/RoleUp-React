@@ -8,7 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 import Main from '../Pages/Main/Main';
 import Footer from '../Footer/Footer';
 import Games from '../Pages/Games/Games';
-import { gameCards, nearestGames } from "../../utils/gameCards";
+import { dndCards, gameCards, nearestGames } from "../../utils/gameCards";
 import Events from '../Pages/Events/Events';
 
 function App() {
@@ -34,6 +34,12 @@ function App() {
               gameCards={gameCards[lang]}
               events={nearestGames}
               lang={lang}
+            />}
+          />
+          <Route path='/dnd' element={
+            <Games
+              texts={texts[lang].dnd}
+              cards={dndCards[lang]}
             />}
           />
           <Route path='/' element={

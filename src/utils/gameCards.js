@@ -33,6 +33,10 @@ export const gameCards = {
   ]
 };
 
+export const dndCards = {
+  ru: []
+};
+
 export const nearestGames = [
   {
     isDnd: false,
