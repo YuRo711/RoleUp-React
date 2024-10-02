@@ -12,15 +12,15 @@ export const texts = {
         },
         {
           url: "/games",
-          text: "Игры"
+          text: "Ролевые"
+        },
+        {
+          url: "/dnd",
+          text: "D&D"
         },
         {
           url: "/prices",
           text: "Прайс-лист"
-        },
-        {
-          url: "/custom",
-          text: "Игра для вас"
         },
         {
           url: "/contacts",
@@ -65,7 +65,8 @@ export const texts = {
 
     games: {
       title: "Наши ролевые игры",
-      button: "Узнать больше"
+      button: "Узнать больше",
+      repeat: "В эту ролевую можно играть несколько раз",
     }
   }
 }

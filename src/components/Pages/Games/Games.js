@@ -1,4 +1,5 @@
 import "./Games.css";
+import repeat from "../../../images/repeat.png"
 
 export default function Games(props) {
   const { texts, cards } = props;
@@ -23,6 +24,17 @@ export default function Games(props) {
               <button className="games__button">
                 {texts.button}
               </button>
+              {
+                card.repeat ?
+                <div className="games__repeat">
+                  <img className="games__repeat-image"
+                    src={repeat}
+                  />
+
+                  <p className="games__repeat-text">{texts.repeat}</p>
+                </div>
+                : ""
+              }
             </div>
           )
         }
