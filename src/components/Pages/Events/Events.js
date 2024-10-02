@@ -19,6 +19,7 @@ export default function Events(props) {
                 event.isDnd ? dndCards[event.index] : gameCards[event.index]
               }
               texts={cardTexts}
+              eventLink={event.link}
             />
           </div>
         ))

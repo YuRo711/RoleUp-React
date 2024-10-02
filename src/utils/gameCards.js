@@ -37,17 +37,19 @@ export const nearestGames = [
   {
     isDnd: false,
     index: 3,
-    date: "10/10/24",
+    date: "10/10, 17:00",
     city: {
       ru: "Тель-Авив",
-    }
+    },
+    link: "https://forms.gle/677WWuyKNaeryMRVA"
   },
   {
     isDnd: false,
     index: 0,
-    date: "21/10/24",
+    date: "21/10, 17:00",
     city: {
       ru: "Иерусалим",
-    }
+    },
+    link: "https://forms.gle/oL14cM8DemdVFHuh7"
   },
 ]

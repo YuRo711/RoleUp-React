@@ -1,7 +1,7 @@
 import repeat from "../../images/repeat.png"
 
 export default function GameCard(props) {
-  const {texts, card} = props;
+  const {texts, card, eventLink} = props;
 
   return (
     <div className="games__card">
@@ -12,16 +12,21 @@ export default function GameCard(props) {
         <h2 className="games__card-title">{card.title}</h2>
         <p className="games__description">{card.text}</p>
       </div>
-      <button className="games__button">
-        {texts.button}
-      </button>
+      {eventLink ? 
+        <a className="games__button" href={eventLink}>
+          {texts.register}
+        </a>
+        :
+        <button className="games__button">
+          {texts.button}
+        </button>
+      }
       {
         card.repeat ?
         <div className="games__repeat">
           <img className="games__repeat-image"
             src={repeat}
           />
-
           <p className="games__repeat-text">{texts.repeat}</p>
         </div>
         : ""
