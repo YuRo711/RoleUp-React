@@ -2,6 +2,7 @@ import robot from "../images/you robot.jpg";
 import frontier from "../images/frontier.jpg";
 import conspiracy from "../images/conspiracy.jpg";
 import forest from "../images/forest.jpg";
+import { type } from "@testing-library/user-event/dist/type";
 
 export const gameCards = {
   ru: [
@@ -34,8 +35,19 @@ export const gameCards = {
 
 export const nearestGames = [
   {
+    isDnd: false,
     index: 3,
     date: "10/10/24",
-    city: "Тель-Авив"
+    city: {
+      ru: "Тель-Авив",
+    }
+  },
+  {
+    isDnd: false,
+    index: 0,
+    date: "21/10/24",
+    city: {
+      ru: "Иерусалим",
+    }
   },
 ]

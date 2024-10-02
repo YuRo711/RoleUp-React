@@ -1,0 +1,25 @@
+.events {
+  margin-top: 80px;
+  padding: 70px 110px 120px;
+}
+
+.events__cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.events__date {
+  font-weight: 500;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.events__city {
+  font-weight: 400;
+  margin-right: 20px;
+}
