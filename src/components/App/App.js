@@ -10,6 +10,8 @@ import Footer from '../Footer/Footer';
 import Games from '../Pages/Games/Games';
 import { dndCards, gameCards, nearestGames } from "../../utils/gameCards";
 import Events from '../Pages/Events/Events';
+import Contacts from '../Pages/Contacts/Contacts';
+import { contacts } from '../../utils/contacts';
 
 function App() {
   const [lang, setLang] = useState("ru");
@@ -44,6 +46,13 @@ function App() {
           />
           <Route path='/prices' element={
             <p className='page__pending'>{texts[lang].pending}</p>
+            }
+          />
+          <Route path='/contacts' element={
+            <Contacts
+              texts={texts[lang].contacts}
+              contacts={contacts}
+            />
             }
           />
           <Route path='/' element={
