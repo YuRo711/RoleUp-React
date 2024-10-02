@@ -34,6 +34,7 @@ function App() {
               texts={texts[lang].events}
               cardTexts={texts[lang].games}
               gameCards={gameCards[lang]}
+              dndCards={dndCards[lang]}
               events={nearestGames}
               lang={lang}
             />}

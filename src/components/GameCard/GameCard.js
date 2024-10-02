@@ -16,10 +16,10 @@ export default function GameCard(props) {
         <a className="games__button" href={eventLink}>
           {texts.register}
         </a>
-        :
-        <button className="games__button">
-          {texts.button}
-        </button>
+        : ""
+        // <button className="games__button">
+        //   {texts.button}
+        // </button>
       }
       {
         card.repeat ?

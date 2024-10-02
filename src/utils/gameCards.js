@@ -2,6 +2,8 @@ import robot from "../images/you robot.jpg";
 import frontier from "../images/frontier.jpg";
 import conspiracy from "../images/conspiracy.jpg";
 import forest from "../images/forest.jpg";
+import heist from "../images/heist.jpg";
+import underground from "../images/underground.jpg";
 import { type } from "@testing-library/user-event/dist/type";
 
 export const gameCards = {
@@ -34,10 +36,32 @@ export const gameCards = {
 };
 
 export const dndCards = {
-  ru: []
+  ru: [
+    {
+      title: "Невозможное ограбление (D&D-ваншот)",
+      text: "Команда авантюристов застряла в магическом лабиринте. Единственное, что они знают: их задача — украсть сокровище, которое вернёт им свободу.",
+      image: heist,
+      repeat: false,
+    },
+    {
+      title: "Подземный Король (D&D-кампания)",
+      text: "Тысячелетний барьер в Подземье вновь открыт. Лишь ваша команда храбрецов может остановить орды чудовищ и найти стоящего за ними Подземного Короля!",
+      image: underground,
+      repeat: false,
+    },
+  ]
 };
 
 export const nearestGames = [
+  {
+    isDnd: true,
+    index: 0,
+    date: "09/10, 18:15",
+    city: {
+      ru: "Ришон-ле-Цион",
+    },
+    link: "https://forms.gle/GSLC715dgyTV8dzH7"
+  },
   {
     isDnd: false,
     index: 3,
@@ -48,6 +72,15 @@ export const nearestGames = [
     link: "https://forms.gle/677WWuyKNaeryMRVA"
   },
   {
+    isDnd: true,
+    index: 1,
+    date: "16/10, 18:30",
+    city: {
+      ru: "Ришон-ле-Цион",
+    },
+    link: "https://forms.gle/ESbX9R8SygC2qp4j8"
+  },
+  {
     isDnd: false,
     index: 0,
     date: "21/10, 17:00",
@@ -55,5 +88,14 @@ export const nearestGames = [
       ru: "Иерусалим",
     },
     link: "https://forms.gle/oL14cM8DemdVFHuh7"
+  },
+  {
+    isDnd: true,
+    index: 1,
+    date: "23/10, 18:30",
+    city: {
+      ru: "Ришон-ле-Цион",
+    },
+    link: "https://forms.gle/ESbX9R8SygC2qp4j8"
   },
 ]
