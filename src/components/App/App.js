@@ -42,6 +42,10 @@ function App() {
               cards={dndCards[lang]}
             />}
           />
+          <Route path='/prices' element={
+            <p className='page__pending'>{texts[lang].pending}</p>
+            }
+          />
           <Route path='/' element={
             <Main
               texts={texts[lang].main}

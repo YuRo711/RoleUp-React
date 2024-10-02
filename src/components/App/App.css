@@ -6,3 +6,7 @@
   flex-direction: column;
   font-family: 'Roboto', 'Lucida Sans', Verdana, sans-serif;
 }
+
+.page__pending {
+  margin: 150px 100px;
+}

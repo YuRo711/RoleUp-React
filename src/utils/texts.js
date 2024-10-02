@@ -97,6 +97,8 @@ export const texts = {
 
     events: {
       title: "Ближайшие игры",
-    }
+    },
+
+    pending: "Этот раздел в процессе заполнения"
   }
 }
